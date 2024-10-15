@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Playwrite+FR+Moderne:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* landing Page */
+html,body{
+    overflow: hidden;
+    padding: o;
+    margin: 0;
+}
+@font-face { 
+    font-family: 'Areogas'; 
+    src: 
+        url('./Assets/fonts/Areogas.ttf')  
+        format('opentype'); 
+
+}
+@font-face { 
+    font-family: 'Diore'; 
+    src: 
+        url('./Assets/fonts/DioreBonneg-Regular.ttf')  
+        format('opentype'); 
+}
+@font-face { 
+    font-family: 'NUSAR'; 
+    src: 
+        url('./Assets/fonts/NUSAR.ttf')  
+        format('opentype'); 
+}
+@font-face { 
+    font-family: 'penna'; 
+    src: 
+        url('./Assets/fonts/penna.regular.ttf')  
+        format('opentype'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+ 
+h2{
+    font-family:"NUSAR";
+    font-size: 30px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgb(34, 29, 184);
+    padding-left: 15px;
+    color: aliceblue;
+}
+.landingPage{
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+
+}
+.video-container {
+    overflow: hidden;
+}
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.navBar{
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.46);
+    justify-content: space-between;
+    height: 70px;
+
+    
+}
+.navContainer1{
+    /* background-color: yellow; */
+    display: flex;
+    
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+      
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(134, 133, 133);
+}
+.navContainer2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.navbutton{
+    display: flex;
+    /* background-color: cyan; */
+    
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 6px;
+}
+.navbutton a{
+    text-decoration: none;
+    color: white;
+    transform: scale3d();
+    transition: all 0.2 ease-in-out;
+}
+.navbutton a:hover{
+    transform: scale3d(1.2,1.2,1.2);
+    color: black;
+    text-shadow: 2px 2px 4px rgb(208, 208, 208);
+}
+.navbutton1{
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    gap:6px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .container button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 600;
+    margin: 0 10px;
+    width: 70px;
+    padding: 10px 0;
+    box-shadow: 1px 1px 8px rgba(104, 85, 224, 0.2);
+    transition: 0.4s;
+  }
+  
+  .reg {
+    color: white;
+    background-color: rgb(32, 54, 176);
+  }
+  
+  .log {
+    color: rgb(104, 85, 224);
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgb(32, 54, 176);}
+  
+  button:hover {
+    color: white;
+    box-shadow: 0 0 20px rgba(85, 94, 224, 0.6);
+    background-color: rgb(32, 54, 176,1);
+  }
+  
+
+.navbutton2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav{
+    list-style: none;
+    padding: 3px 4px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    
+}
+/* .content .content-text {
+    backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px;
+
+} */
+.content .content-text h1{
+    padding-left: 100px;
+    font-size: 70px; 
+
+    text-shadow: 5px 6px 15px #000000;    
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-style: bold;
+      
+}
+.content .content-text p{
+    padding-left: 100px;
+    display: block;
+    padding-right: 50px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 4px gray;
+    font-family: 'penna',sans-serif;
+    font-weight: 600;
+}
+
+/* login page */
+.loginPage{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(-246deg,rgb(221, 232, 241),rgb(32, 145, 211),rgb(28, 78, 242),rgb(57, 57, 97),rgb(20, 3, 89));
+    padding: 50px;
+
+    box-shadow: 3px 3px 7px;
+    border-radius: 7px;
+    transform: scale3d();
+    transition: transform 0.4s ease-in-out;
+}
+.loginContainer:hover{
+    box-shadow: 4px 4px 10px rgb(226, 226, 226);
+    transform: scale3d(1.04,1.04,1.04);
+
+}
+.input-1{
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 4px;
+    width: 225px;
+
+    border: 2px solid rgb(11, 114, 189) ;
+    box-shadow: 2px 2px  5px rgb(56, 56, 56);
+    color:rgb(0, 1, 6);
+    padding: 8px 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.46);
+
+
+}
+.input-1:focus {
+    outline: none;
+    border: rgb(113, 150, 218); 
+  }
+  .input-1::placeholder{
+    color: rgb(255, 255, 255);
+    transform: translateX();
+    transition: transform 0.2s ease-in-out;
+
+  }
+  .input-1:hover::placeholder{
+    transform: translateX(5px);
+  }
+  
+
+.input-2{
+    margin-top: 3px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 8px;
+    width: 225px;
+    text-shadow: 1px 1px 4px black;
+    background-color: rgb(0, 94, 201);
+    box-shadow: 1px 1px 7px rgb(49, 49, 49);
+    transition: all 0.2s ease-in-out;
+}
+.input-2:hover{
+    background-color: rgb(26, 39, 155);
+    box-shadow: 1px 1px 7px rgb(180, 180, 180);
+
+    
+}
+.loginPage h1{
+    /* text-transform: uppercase; */
+    color: white;
+    font-family: "Playwrite FR Moderne", cursive;
+    font-weight: 600;
+    
+}
+.navbutton2 nav a img{
+    transform: rotate(0deg);
+    transform: scale3d();
+    transition: transform 0.2s ease-in-out;
+}
+.navbutton2 nav a img:hover{
+    transform: rotate(95deg);
+    transform: scale3d(1.08,1.08,1.08);
+
+}
+
+.rotate {
+    display: inline-block; 
+    transition: transform 0.6s ease-in-out;
+    transform-origin: center center;}
+  
+  .rotate:hover {
+    transform: scale(1.2);
+  }
+  
+.size {
+    display: inline-block; 
+    transition: transform 0.6s ease-in-out;
+    transform-origin: center;
+  }
+  
+  
+  .size:hover {
+    transform:scale(1.2);}
+  
+  
