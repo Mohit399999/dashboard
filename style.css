@@ -201,6 +201,15 @@ video{
     font-family: 'penna',sans-serif;
     font-weight: 600;
 }
+.container .log a{
+    text-decoration: none;
+    color: rgb(104, 85, 224);
+
+}
+.container .reg a{
+    text-decoration: none;
+    color: white;
+}
 
 /* login page */
 .loginPage{
@@ -228,6 +237,7 @@ video{
     transform: scale3d(1.04,1.04,1.04);
 
 }
+
 .input-1{
     margin-bottom: 8px;
     box-sizing: border-box;

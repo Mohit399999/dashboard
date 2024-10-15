@@ -17,14 +17,15 @@
 
         <nav class="navBar">
             <div class="navlogo">
-                <h2>Glucose Guardian
+                <h2 class="h2">
+                    Glucose Guardian
                 </h2>
 
             </div>
             <div class="navContainer1">
                 <div class="navContainer2">
                     <ul class="navbutton">
-                        <li class="nav"><a href="#">Dashboard</a></li>
+                        <li class="nav"><a href="">Dashboard</a></li>
                         <li class="nav"><a href="#">Insulin Dose Form</a></li>
                         <li class="nav"><a href="#">Logs & History</a></li>
                         <li class="nav"><a href="#">Notifications</a></li>
@@ -32,8 +33,8 @@
                     </ul>
                     <ul class="navbutton1">
                         <div class="container">
-                              <button class="log">LOGIN</button>
-                              <button class="reg">SIGN UP</button>
+                              <button class="log"><a class="button" href="Login.html">LOGIN</a></button>
+                              <button class="reg"><a class="button" href="Signup.html">SIGN UP</a></button>
                             </div>
                         
                     </ul>
@@ -55,12 +56,12 @@
             <div class="content-text">
                 <div class="hero-text">
 
-                    <h1>
+                    <h1 class="h1">
                         Empower Your Diabetes Management Journey Today</h1>
                 </div>
                 <div class="hero-para">
 
-                    <p>
+                    <p class="para"> 
                         Welcome to our diabetes management platform effortlessly track glucose trends, manage insulin usage, get real-time alerts, and take control of your health like never before.
                     </p>
                 </div>
@@ -78,9 +79,14 @@
 
 
         });
-        ScrollReveal().reveal(".nav-btn", { delay: 50, origin: "top", interval: 150 });
+        ScrollReveal().reveal(".nav", { delay: 40, origin: "top", interval: 150 });
+        ScrollReveal().reveal(".button", { delay: 40, origin: "top", interval: 150 });
 
-    </script>    }
+        ScrollReveal().reveal(".h2", { delay: 30, origin: "left", interval: 150 });
+        ScrollReveal().reveal(".h1", { delay: 50, origin: "right", interval: 150 });
+        ScrollReveal().reveal(".para", { delay: 60, origin: "bottom", interval: 150 });
+
+    </script>    
       
 </body>
 
